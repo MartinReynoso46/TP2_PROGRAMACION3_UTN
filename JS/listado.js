@@ -10,6 +10,7 @@ const elementos = [
 const contenedor = document.getElementById("contenedor-listado");
 const btnTodos = document.getElementById("btn-todos");
 const btnJuegos = document.getElementById("btn-juegos");
+const btnDeportes = document.getElementById ("btn-deportes");
 
 function mostrarElementos(lista) {
     contenedor.innerHTML = "";
@@ -35,5 +36,10 @@ btnTodos.addEventListener("click", () => {
 
 btnJuegos.addEventListener("click", () => {
     const filtrados = elementos.filter(item => item.categoria === "Juegos");
+    mostrarElementos(filtrados);
+});
+
+btnDeportes.addEventListener("click", () => {
+    const filtrados = elementos.filter(item => item.categoria === "Deportes");
     mostrarElementos(filtrados);
 });
