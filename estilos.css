@@ -114,7 +114,7 @@ button:hover {
 
 
 .tarjeta.seleccionada {
-    border-color: #e74c3c;
+    border-color: #f71d04;
     background-color: #fadbd8;
     transform: scale(1.02);
 }
